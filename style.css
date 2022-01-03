@@ -1,0 +1,161 @@
+/*👉# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600👈*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+
+
+
+}
+
+.wrapper {
+    max-width: 450px;
+    background-color: hsl(217, 54%, 11%);
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 3rem 1rem 3rem 1rem;
+
+
+}
+
+.content {
+    max-width: 400px;
+    background-color: hsl(216, 50%, 16%);
+    padding-top: 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+
+
+}
+
+.text {
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit';
+    font-weight: 300;
+}
+
+.header {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Outfit';
+    font-weight: 600;
+    margin-bottom: -1rem;
+}
+
+.price p {
+    color: hsl(178, 100%, 50%);
+}
+
+.name {
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+
+
+.main-image img {
+    border-radius: 1rem;
+    min-height: 350px;
+    max-width: 370px;
+
+
+
+}
+
+.price-ticker {
+    display: grid;
+    grid-template-columns: 10rem 3rem;
+    gap: 6rem;
+    margin-top: -0.5rem;
+
+}
+
+.price {
+    display: grid;
+    grid-template-columns: 25px 75px;
+    align-items: center;
+    font-weight: 400;
+
+
+}
+
+.ticker {
+    display: grid;
+    grid-template-columns: 25px 90px;
+    align-items: center;
+
+}
+
+.ticker>.text {
+    font-weight: 400;
+}
+
+.creator img {
+    height: 40px;
+    width: 40px;
+}
+
+.creator {
+    display: grid;
+    grid-template-columns: 50px 200px;
+    padding-top: 0.5rem;
+    gap: 1.5rem;
+    align-items: center;
+
+}
+
+.creator p {
+
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+/*👉.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}👈*/
