@@ -1,37 +1,3 @@
-/*👉# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Soft blue: hsl(215, 51%, 70%)
-- Cyan: hsl(178, 100%, 50%)
-
-### Neutral
-
-- Very dark blue (main BG): hsl(217, 54%, 11%)
-- Very dark blue (card BG): hsl(216, 50%, 16%)
-- Very dark blue (line): hsl(215, 32%, 27%)
-- White: hsl(0, 0%, 100%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 18px
-
-### Font
-
-- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 300, 400, 600👈*/
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -41,38 +7,108 @@ The designs were created to the following widths:
 }
 
 .wrapper {
-    max-width: 450px;
+    height: 100vh;
     background-color: hsl(217, 54%, 11%);
     display: grid;
     justify-content: center;
-    margin: 0 auto;
-    padding: 3rem 1rem 3rem 1rem;
+    align-content: center;
+}
+
+.content {
+    display: grid;
+    width: 400px;
+    background-color: hsl(216, 50%, 16%);
+    padding-top: 1rem;
+    border-radius: 1rem;
+
 
 
 }
 
-.content {
-    max-width: 400px;
-    background-color: hsl(216, 50%, 16%);
-    padding-top: 3rem;
+
+
+.main-image {
+
+    width: 94%;
+    border-radius: 1rem;
+    position: relative;
+    display: grid;
+    justify-self: center;
+
+
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+}
+
+.overlay {
+
+    background-color: rgba(0, 255, 247, 30%);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.25s ease;
+    position: absolute;
     border-radius: 1rem;
     padding: 1rem;
 
 
+
+
 }
+
+.hover img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 75px;
+    width: 75px;
+    transform: translate(-50%, -50%);
+}
+
+.overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 
 .text {
     font-size: 18px;
     color: hsl(215, 51%, 70%);
     font-family: 'Outfit';
     font-weight: 300;
+
+}
+
+.title {
+    padding: 2rem 1rem 1rem 1rem;
+
+    margin: 0;
 }
 
 .header {
     color: hsl(0, 0%, 100%);
     font-family: 'Outfit';
     font-weight: 600;
-    margin-bottom: -1rem;
+
+    margin: 0;
+
+}
+
+.title p {
+
+    margin: 0;
+}
+
+.header:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
 }
 
 .price p {
@@ -81,36 +117,34 @@ The designs were created to the following widths:
 
 .name {
     color: hsl(0, 0%, 100%);
+
 }
 
-
-
-
-
-.main-image img {
-    border-radius: 1rem;
-    min-height: 350px;
-    max-width: 370px;
-
-
-
+.name:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
 }
 
 .price-ticker {
     display: grid;
-    grid-template-columns: 10rem 3rem;
-    gap: 6rem;
-    margin-top: -0.5rem;
-
+    justify-self: center;
+    grid-template-columns: 4rem 7rem;
+    gap: 11rem;
 }
 
 .price {
     display: grid;
     grid-template-columns: 25px 75px;
     align-items: center;
+    padding-top: 4px;
     font-weight: 400;
 
 
+
+}
+
+.price>p {
+    font-weight: 400;
 }
 
 .ticker {
@@ -120,29 +154,46 @@ The designs were created to the following widths:
 
 }
 
-.ticker>.text {
+.ticker>p {
     font-weight: 400;
+}
+
+hr {
+    margin: 15px;
+    border: 0;
+    height: 2px;
+    background-color: hsl(215, 32%, 27%);
+
+
 }
 
 .creator img {
     height: 40px;
     width: 40px;
+    border: white solid 1px;
+    border-radius: 20px;
+
 }
 
 .creator {
     display: grid;
-    grid-template-columns: 50px 200px;
-    padding-top: 0.5rem;
-    gap: 1.5rem;
+    grid-template-columns: 10% 90%;
+    gap: 2rem;
     align-items: center;
 
+    padding: 1rem;
 }
 
-.creator p {
 
-    align-self: center;
-}
 
+/*👉@media screen and (min-width: 450px) {
+
+    .wrapper {
+        background-color: hsl(217, 54%, 11%);
+
+        outline: solid red;👈*/
+/*👉}
+}👈*/
 
 
 
